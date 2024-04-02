@@ -60,6 +60,7 @@ createApp({
                 done: false,
             };
             this.tasks.push(newTaskObject);
+            this.newTask = '';  // svuota il campo imput dopo aver pushato l'object
         }
     }, 
 }).mount('#app');
