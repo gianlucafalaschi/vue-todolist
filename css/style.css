@@ -46,3 +46,19 @@ header .logo img {
     border-radius: 8px;
     padding: 20px;
 }
+
+.task {
+    padding: 10px;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.delete {
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+}
