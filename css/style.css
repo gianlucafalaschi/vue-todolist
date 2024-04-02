@@ -59,6 +59,6 @@ header .logo img {
     cursor: pointer;
 }
 
-.done {
+.completed {
     text-decoration: line-through;
 }
