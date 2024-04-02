@@ -28,10 +28,6 @@ createApp({
         return {
             newTask:'',   // variabile che memorizza l'input dell'utente
             
-            objectNewTask: {
-                text: this.newTask,
-                done: false,
-            },
             
             tasks: [
                 {
@@ -59,7 +55,11 @@ createApp({
 
         },
         addNewTask(){ //funzione che prende l'input dell'utente (newTasks) e lo aggiunge all'array tasks
-            this.tasks.push(this.newTask);
+            const newTaskObject = {
+                text: this.newTask,
+                done: false,
+            };
+            this.tasks.push(newTaskObject);
         }
     }, 
 }).mount('#app');
