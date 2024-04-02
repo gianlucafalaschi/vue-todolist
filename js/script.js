@@ -49,5 +49,9 @@ createApp({
     
     methods: {
         // Aggiungi qui i metodi personalizzati se necessario
+        deleteItem(indexToDelete){  // rimuove elemento dall'array tramite splice   
+            this.tasks.splice(indexToDelete, 1);
+
+        }
     }, 
 }).mount('#app');
