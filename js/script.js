@@ -26,6 +26,8 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            taskDone: false,
+            
             tasks: [
                 {
                     text: 'Fare i compiti',
@@ -40,9 +42,9 @@ createApp({
                     done: false,
                 },
             ],
-            
+               
         };
-    
+        
     },
     
     methods: {
