@@ -22,7 +22,7 @@
             <!-- USER INPUTS -->
             <div class="user-inputs">
                 <input type="text" placeholder="Nuova Task" v-model="newTask">
-                <button type="button">Aggiungi</button>
+                <button type="button" @click="addNewTask()">Aggiungi</button>
             </div>
             <!-- TASKS -->
             <div class="tasks">

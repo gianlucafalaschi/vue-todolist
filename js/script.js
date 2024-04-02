@@ -26,7 +26,12 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            newTask:'',
+            newTask:'',   // variabile che memorizza l'input dell'utente
+            
+            objectNewTask: {
+                text: this.newTask,
+                done: false,
+            },
             
             tasks: [
                 {
@@ -52,6 +57,9 @@ createApp({
         deleteItem(indexToDelete){  // rimuove elemento dall'array tramite splice   
             this.tasks.splice(indexToDelete, 1);
 
+        },
+        addNewTask(){ //funzione che prende l'input dell'utente (newTasks) e lo aggiunge all'array tasks
+            this.tasks.push(this.newTask);
         }
     }, 
 }).mount('#app');
