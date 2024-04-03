@@ -28,7 +28,7 @@
             <div class="tasks">
                 <!-- per ogni elemento in tasks il valore di text e aggiungi classe completed se done === true -->
                 <div v-for="(singleTask, index) in tasks" class="task" :class="{'completed': singleTask.done}">
-                    <span>{{tasks[index].text}}</span>
+                    <span>{{singleTask.text}}</span>
                     <span class="delete" @click="deleteItem(index)"><i class="fa-solid fa-xmark"></i></span>
                 </div>
                 
