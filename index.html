@@ -21,7 +21,7 @@
         <main>
             <!-- USER INPUTS -->
             <div class="user-inputs">
-                <input type="text" placeholder="Nuova Task" v-model="newTask">
+                <input type="text" placeholder="Nuova Task" v-model="newTask" @keyup.enter="addNewTask()">
                 <button type="button" @click="addNewTask()">Aggiungi</button>
             </div>
             <!-- TASKS -->
